@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marine <marine@student.42.fr>              +#+  +:+       +#+        */
+/*   By: madavid <madavid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:16:47 by madavid           #+#    #+#             */
-/*   Updated: 2023/04/11 19:13:22 by marine           ###   ########.fr       */
+/*   Updated: 2023/04/13 23:59:07 by madavid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ int	countdigit(const char *str)
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	if ((str[i] == '-') || (str[i] == '+'))
+		i++;
+	while (str[i] == '0' && str[i + 1] == '0')
 		i++;
 	while (str[i] >= '0' && str[i] <= '9' )
 	{

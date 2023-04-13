@@ -6,7 +6,7 @@
 /*   By: madavid <madavid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 21:24:48 by marine            #+#    #+#             */
-/*   Updated: 2023/04/11 22:02:46 by madavid          ###   ########.fr       */
+/*   Updated: 2023/04/14 00:11:20 by madavid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	sort_choice(t_list **stack_a, t_list **stack_b, int size)
 {
 	if (size == 2)
 		sort_two(stack_a);
-	if (size == 3)
+	else if (size == 3)
 		sort_three(stack_a);
 	else if (size == 5)
 		sort_five(stack_a, stack_b);

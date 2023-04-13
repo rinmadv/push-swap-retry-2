@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marine <marine@student.42.fr>              +#+  +:+       +#+        */
+/*   By: madavid <madavid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 22:17:25 by madavid           #+#    #+#             */
-/*   Updated: 2023/04/11 20:16:54 by marine           ###   ########.fr       */
+/*   Updated: 2023/04/13 23:09:42 by madavid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ int	do_moves(t_move **lst_move, t_list **st_a, t_list **st_b)
 		}
 		*lst_move = (*lst_move)->next;
 	}
+	*lst_move = begin;
 	return (0);
 }
 
